@@ -12,8 +12,8 @@
 
 document.querySelector('#form').addEventListener('submit', function(e){
     e.preventDefault()
-    let value = document.querySelector('#')
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.value}&appid=${apikey}&units=metric`)
+    let ville = document.querySelector('#in').value
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=${apikey}&units=metric`)
     .then(res => res.json()
     .then(data => {
         console.log(data)
