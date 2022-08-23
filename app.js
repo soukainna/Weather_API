@@ -1,4 +1,4 @@
-
+//the apikey is private you can create your own in the web site "https://openweathermap.org/current#name"
 // const apikey = ''
  fetch(`https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apikey}&units=metric`)
 .then(res => res.json()
