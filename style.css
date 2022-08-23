@@ -1,0 +1,98 @@
+
+html {
+    min-height: 100%
+}
+
+
+body {
+    background: rgb(93, 82, 152);
+    background: linear-gradient(135deg, rgb(118, 188, 170) 0%, rgb(188, 127, 170) 100%);
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+#first {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+#in {
+    margin-bottom: 10px;
+    width: 400px;
+    height: 25px;
+}
+#sub {
+    background-color: rgb(106, 162, 148);
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    color: azure;
+    font-size: large;
+}
+
+#top {
+   
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   margin-top: 90px;
+   text-align: center;
+   align-items: center;
+   font-size: larger;
+   font-weight: bold;
+   color: white;
+}
+
+#city {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(197, 222, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp {
+    width:200px;
+    height: 200px;
+    background-color: rgb(214, 234, 233);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#buttom {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+
+#humidity {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(168, 195, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wind {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(177, 201, 200);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
