@@ -1,5 +1,5 @@
 
- //const apikey = '191f3d470aad578fc5f6ee7da072bf1f'
+// const apikey = ''
  fetch(`https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apikey}&units=metric`)
 .then(res => res.json()
 .then(data => {
