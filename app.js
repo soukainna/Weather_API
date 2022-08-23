@@ -8,4 +8,14 @@
     document.querySelector('#temp').innerHTML = '<i class="fa-solid fa-temperature-low"></i>' + '&nbsp;&nbsp;' + data.main.temp + ' °'
     document.querySelector('#humidity').innerHTML = '<i class="fa-solid fa-droplet"></i>' + '&nbsp;&nbsp;' + data.main.humidity + ' %'
     document.querySelector('#wind').innerHTML = '<i class="fa-solid fa-wind"></i>' + '&nbsp;&nbsp;' + data.wind.speed + ' km/h'
-}))
+})).catch(err => {console.log(err)})
+
+document.querySelector('#form').addEventListener('submit', function(e){
+    e.preventDefault()
+    let value = document.querySelector('#')
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.value}&appid=${apikey}&units=metric`)
+    .then(res => res.json()
+    .then(data => {
+        console.log(data)
+    }))
+})
